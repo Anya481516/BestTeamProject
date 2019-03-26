@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace BestTeamProject
 {
-    public partial class FrmMain : Form
+    public partial class FrmHelp : Form
     {
-        public FrmMain()
+        public FrmHelp()
         {
             InitializeComponent();
-        }
-
-        private void FrmMain_Load(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void btnPognaliPochinim_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
