@@ -38,6 +38,7 @@
             this.mstMainMenu = new System.Windows.Forms.MenuStrip();
             this.помощьToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.какПользоватьсяToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnClose = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.mstMainMenu.SuspendLayout();
@@ -49,7 +50,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblHello.Font = new System.Drawing.Font("Monotype Corsiva", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblHello.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblHello.Location = new System.Drawing.Point(12, 35);
+            this.lblHello.Location = new System.Drawing.Point(12, 28);
             this.lblHello.Name = "lblHello";
             this.lblHello.Size = new System.Drawing.Size(960, 57);
             this.lblHello.TabIndex = 0;
@@ -62,7 +63,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(179, 92);
+            this.label1.Location = new System.Drawing.Point(179, 74);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(620, 65);
             this.label1.TabIndex = 1;
@@ -78,13 +79,14 @@
             this.btnPognaliVyberem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnPognaliVyberem.Font = new System.Drawing.Font("Lato Black", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnPognaliVyberem.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnPognaliVyberem.Location = new System.Drawing.Point(39, 364);
+            this.btnPognaliVyberem.Location = new System.Drawing.Point(38, 342);
             this.btnPognaliVyberem.Margin = new System.Windows.Forms.Padding(0);
             this.btnPognaliVyberem.Name = "btnPognaliVyberem";
             this.btnPognaliVyberem.Size = new System.Drawing.Size(247, 63);
             this.btnPognaliVyberem.TabIndex = 2;
             this.btnPognaliVyberem.Text = "Выбор Автомобиля";
             this.btnPognaliVyberem.UseVisualStyleBackColor = false;
+            this.btnPognaliVyberem.Click += new System.EventHandler(this.btnPognaliVyberem_Click);
             // 
             // pictureBox1
             // 
@@ -92,7 +94,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(39, 160);
+            this.pictureBox1.Location = new System.Drawing.Point(38, 138);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(247, 201);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -105,7 +107,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(693, 160);
+            this.pictureBox2.Location = new System.Drawing.Point(692, 138);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(247, 201);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -119,7 +121,7 @@
             this.btnPognaliPochinim.BackColor = System.Drawing.Color.White;
             this.btnPognaliPochinim.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnPognaliPochinim.Font = new System.Drawing.Font("Lato Black", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnPognaliPochinim.Location = new System.Drawing.Point(693, 364);
+            this.btnPognaliPochinim.Location = new System.Drawing.Point(692, 342);
             this.btnPognaliPochinim.Margin = new System.Windows.Forms.Padding(0);
             this.btnPognaliPochinim.Name = "btnPognaliPochinim";
             this.btnPognaliPochinim.Size = new System.Drawing.Size(247, 63);
@@ -152,12 +154,31 @@
             this.какПользоватьсяToolStripMenuItem1.Name = "какПользоватьсяToolStripMenuItem1";
             this.какПользоватьсяToolStripMenuItem1.Size = new System.Drawing.Size(189, 22);
             this.какПользоватьсяToolStripMenuItem1.Text = "Как пользоваться?";
+            this.какПользоватьсяToolStripMenuItem1.Click += new System.EventHandler(this.какПользоватьсяToolStripMenuItem1_Click);
+            // 
+            // btnClose
+            // 
+            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnClose.BackColor = System.Drawing.Color.White;
+            this.btnClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnClose.Font = new System.Drawing.Font("Lato Black", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnClose.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnClose.Location = new System.Drawing.Point(38, 419);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(0);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(901, 33);
+            this.btnClose.TabIndex = 7;
+            this.btnClose.Text = "Выход";
+            this.btnClose.UseVisualStyleBackColor = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(984, 461);
+            this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnPognaliPochinim);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
@@ -192,6 +213,7 @@
         private System.Windows.Forms.MenuStrip mstMainMenu;
         private System.Windows.Forms.ToolStripMenuItem помощьToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem какПользоватьсяToolStripMenuItem1;
+        private System.Windows.Forms.Button btnClose;
     }
 }
 

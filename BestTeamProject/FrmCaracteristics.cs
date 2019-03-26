@@ -10,17 +10,16 @@ using System.Windows.Forms;
 
 namespace BestTeamProject
 {
-    public partial class FrmHelp : Form
+    public partial class FrmCaracteristics : Form
     {
-        public FrmHelp()
+        public FrmCaracteristics()
         {
             InitializeComponent();
         }
 
-        // закрывается окно
-        private void button1_Click(object sender, EventArgs e)
+        public FrmCaracteristics(Car car)
         {
-            this.Close();
+            InitializeComponent();
         }
     }
 }

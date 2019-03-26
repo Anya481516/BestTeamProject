@@ -22,9 +22,31 @@ namespace BestTeamProject
             
         }
 
+        // Вызываетсч окно руководства пользователя
+        private void какПользоватьсяToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FrmHelp frmHelp = new FrmHelp();
+            frmHelp.ShowDialog();
+        }
+
+        // Вызывается окно на запись на диагностику
         private void btnPognaliPochinim_Click(object sender, EventArgs e)
         {
+            FrmDiaglostics frmDiagnostics = new FrmDiaglostics();
+            frmDiagnostics.ShowDialog();
+        }
 
+        // Вызывается окно каталога автомобилей
+        private void btnPognaliVyberem_Click(object sender, EventArgs e)
+        {
+            FrmCatalog frmCatalog = new FrmCatalog();
+            frmCatalog.ShowDialog();
+        }
+
+        // Закрыть приложение
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
