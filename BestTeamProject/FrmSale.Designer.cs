@@ -42,12 +42,12 @@
             this.txtLastName = new System.Windows.Forms.TextBox();
             this.txtThirdName = new System.Windows.Forms.TextBox();
             this.txtTelephone = new System.Windows.Forms.TextBox();
-            this.Address = new System.Windows.Forms.TextBox();
+            this.txtAddress = new System.Windows.Forms.TextBox();
             this.dtpDateOfBirth = new System.Windows.Forms.DateTimePicker();
             this.btnBuyBuy = new System.Windows.Forms.Button();
             this.gbxPayment = new System.Windows.Forms.GroupBox();
-            this.rdbCash = new System.Windows.Forms.RadioButton();
             this.rdbCard = new System.Windows.Forms.RadioButton();
+            this.rdbCash = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.pcbCar)).BeginInit();
             this.gbxPayment.SuspendLayout();
             this.SuspendLayout();
@@ -201,12 +201,12 @@
             this.txtTelephone.Size = new System.Drawing.Size(320, 20);
             this.txtTelephone.TabIndex = 18;
             // 
-            // Address
+            // txtAddress
             // 
-            this.Address.Location = new System.Drawing.Point(152, 444);
-            this.Address.Name = "Address";
-            this.Address.Size = new System.Drawing.Size(320, 20);
-            this.Address.TabIndex = 19;
+            this.txtAddress.Location = new System.Drawing.Point(152, 444);
+            this.txtAddress.Name = "txtAddress";
+            this.txtAddress.Size = new System.Drawing.Size(320, 20);
+            this.txtAddress.TabIndex = 19;
             // 
             // dtpDateOfBirth
             // 
@@ -230,6 +230,7 @@
             this.btnBuyBuy.TabIndex = 21;
             this.btnBuyBuy.Text = "Совершить покупку";
             this.btnBuyBuy.UseVisualStyleBackColor = false;
+            this.btnBuyBuy.Click += new System.EventHandler(this.btnBuyBuy_Click);
             // 
             // gbxPayment
             // 
@@ -243,17 +244,6 @@
             this.gbxPayment.TabStop = false;
             this.gbxPayment.Text = "Способ Оплаты";
             // 
-            // rdbCash
-            // 
-            this.rdbCash.AutoSize = true;
-            this.rdbCash.Location = new System.Drawing.Point(347, 15);
-            this.rdbCash.Name = "rdbCash";
-            this.rdbCash.Size = new System.Drawing.Size(102, 26);
-            this.rdbCash.TabIndex = 0;
-            this.rdbCash.TabStop = true;
-            this.rdbCash.Text = "Наличные";
-            this.rdbCash.UseVisualStyleBackColor = true;
-            // 
             // rdbCard
             // 
             this.rdbCard.AutoSize = true;
@@ -265,6 +255,17 @@
             this.rdbCard.Text = "Банковская Карта";
             this.rdbCard.UseVisualStyleBackColor = true;
             // 
+            // rdbCash
+            // 
+            this.rdbCash.AutoSize = true;
+            this.rdbCash.Location = new System.Drawing.Point(347, 15);
+            this.rdbCash.Name = "rdbCash";
+            this.rdbCash.Size = new System.Drawing.Size(102, 26);
+            this.rdbCash.TabIndex = 0;
+            this.rdbCash.TabStop = true;
+            this.rdbCash.Text = "Наличные";
+            this.rdbCash.UseVisualStyleBackColor = true;
+            // 
             // FrmSale
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -273,7 +274,7 @@
             this.Controls.Add(this.gbxPayment);
             this.Controls.Add(this.btnBuyBuy);
             this.Controls.Add(this.dtpDateOfBirth);
-            this.Controls.Add(this.Address);
+            this.Controls.Add(this.txtAddress);
             this.Controls.Add(this.txtTelephone);
             this.Controls.Add(this.txtThirdName);
             this.Controls.Add(this.txtLastName);
@@ -313,7 +314,7 @@
         private System.Windows.Forms.TextBox txtLastName;
         private System.Windows.Forms.TextBox txtThirdName;
         private System.Windows.Forms.TextBox txtTelephone;
-        private System.Windows.Forms.TextBox Address;
+        private System.Windows.Forms.TextBox txtAddress;
         private System.Windows.Forms.DateTimePicker dtpDateOfBirth;
         private System.Windows.Forms.Button btnBuyBuy;
         private System.Windows.Forms.GroupBox gbxPayment;

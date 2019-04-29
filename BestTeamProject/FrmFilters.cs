@@ -62,30 +62,28 @@ namespace BestTeamProject
         // а когда меняем в текст боксе надо подумать как норм сделать йоу _______________________________
         private void txtMaxPower_KeyUp(object sender, KeyEventArgs e)
         {
-            if (e.KeyValue.Equals(13))
+            if (e.KeyCode == Keys.Enter)
             {
-                try
+                if (Int32.Parse(txtMaxPower.Text) < Int32.Parse(txtMinPower.Text))
                 {
-                    trbMaxPower.Value = Int32.Parse(txtMaxPower.Text);
-                }
-                catch
-                {
-                    MessageBox.Show("Введите число от " + txtMinPower.Text + " до 300");
+                    txtMaxPower.Text = txtMinPower.Text;
+                    MessageBox.Show("Число должно быть от " + txtMinPower.Text + " до 300");
+                    txtMaxPower.SelectAll();
+                    trbMaxPower.Value = Int32.Parse(txtMinPower.Text);
                 }
             }
         }
 
         private void txtMinPower_KeyUp(object sender, KeyEventArgs e)
         {
-            if (e.KeyValue.Equals(13))
+            if (e.KeyCode == Keys.Enter)
             {
-                try
+                if (Int32.Parse(txtMinPower.Text) > Int32.Parse(txtMaxPower.Text))
                 {
-                    trbMinPower.Value = Int32.Parse(txtMinPower.Text);
-                }
-                catch
-                {
-                    MessageBox.Show("Введите число от 100 до " + txtMaxPower.Text);
+                    txtMinPower.Text = txtMaxPower.Text;
+                    MessageBox.Show("Число должно быть от 100 до " + txtMaxPower.Text);
+                    txtMinPower.SelectAll();
+                    trbMinPower.Value = Int32.Parse(txtMaxPower.Text);
                 }
             }
         }

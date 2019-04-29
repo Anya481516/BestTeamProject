@@ -7,12 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+using Word = Microsoft.Office.Interop.Outlook;
 
 namespace BestTeamProject
 {
     public partial class FrmSale : Form
     {
         Car car;
+        Person client;
 
         public FrmSale()
         {
@@ -29,6 +32,21 @@ namespace BestTeamProject
         {
             FrmCaracteristics frmCharacteristics = new FrmCaracteristics(car);
             frmCharacteristics.Show();
+        }
+
+        private void btnBuyBuy_Click(object sender, EventArgs e)
+        {
+            client.FirstName = txtName.Text;
+            client.LastName = txtLastName.Text;
+            client.FatherName = txtThirdName.Text;
+            client.DateOfBirth = dtpDateOfBirth.Value;
+            client.Telephone = txtTelephone.Text;
+            client.Address = txtAddress.Text;
+
+            // надо в файл записать
+            var wordApp = new Word.Application();
+            
+            //var wordDocument = wordApp.Docu
         }
     }
 }

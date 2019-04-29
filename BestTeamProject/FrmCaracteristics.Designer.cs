@@ -228,6 +228,7 @@
             // 
             // txtThirdName
             // 
+            this.txtThirdName.Enabled = false;
             this.txtThirdName.Font = new System.Drawing.Font("Lato", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.txtThirdName.Location = new System.Drawing.Point(152, 249);
             this.txtThirdName.Name = "txtThirdName";
@@ -237,6 +238,7 @@
             // 
             // txtLastName
             // 
+            this.txtLastName.Enabled = false;
             this.txtLastName.Font = new System.Drawing.Font("Lato", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.txtLastName.Location = new System.Drawing.Point(152, 219);
             this.txtLastName.Name = "txtLastName";
@@ -246,6 +248,7 @@
             // 
             // txtName
             // 
+            this.txtName.Enabled = false;
             this.txtName.Font = new System.Drawing.Font("Lato", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.txtName.Location = new System.Drawing.Point(152, 190);
             this.txtName.Name = "txtName";
@@ -255,6 +258,7 @@
             // 
             // textBox1
             // 
+            this.textBox1.Enabled = false;
             this.textBox1.Font = new System.Drawing.Font("Lato", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox1.Location = new System.Drawing.Point(152, 279);
             this.textBox1.Name = "textBox1";
@@ -264,6 +268,7 @@
             // 
             // textBox2
             // 
+            this.textBox2.Enabled = false;
             this.textBox2.Font = new System.Drawing.Font("Lato", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox2.Location = new System.Drawing.Point(152, 308);
             this.textBox2.Name = "textBox2";
@@ -273,6 +278,7 @@
             // 
             // textBox3
             // 
+            this.textBox3.Enabled = false;
             this.textBox3.Font = new System.Drawing.Font("Lato", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox3.Location = new System.Drawing.Point(152, 354);
             this.textBox3.Name = "textBox3";
@@ -282,6 +288,7 @@
             // 
             // textBox4
             // 
+            this.textBox4.Enabled = false;
             this.textBox4.Font = new System.Drawing.Font("Lato", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox4.Location = new System.Drawing.Point(152, 411);
             this.textBox4.Name = "textBox4";
@@ -291,6 +298,7 @@
             // 
             // textBox5
             // 
+            this.textBox5.Enabled = false;
             this.textBox5.Font = new System.Drawing.Font("Lato", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox5.Location = new System.Drawing.Point(152, 464);
             this.textBox5.Name = "textBox5";
@@ -300,6 +308,7 @@
             // 
             // textBox6
             // 
+            this.textBox6.Enabled = false;
             this.textBox6.Font = new System.Drawing.Font("Lato", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox6.Location = new System.Drawing.Point(152, 515);
             this.textBox6.Name = "textBox6";
@@ -309,6 +318,7 @@
             // 
             // textBox7
             // 
+            this.textBox7.Enabled = false;
             this.textBox7.Font = new System.Drawing.Font("Lato", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox7.Location = new System.Drawing.Point(152, 553);
             this.textBox7.Name = "textBox7";
@@ -318,6 +328,7 @@
             // 
             // textBox8
             // 
+            this.textBox8.Enabled = false;
             this.textBox8.Font = new System.Drawing.Font("Lato", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox8.Location = new System.Drawing.Point(152, 598);
             this.textBox8.Name = "textBox8";
@@ -327,6 +338,7 @@
             // 
             // textBox9
             // 
+            this.textBox9.Enabled = false;
             this.textBox9.Font = new System.Drawing.Font("Lato", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox9.Location = new System.Drawing.Point(152, 639);
             this.textBox9.Name = "textBox9";
@@ -366,7 +378,7 @@
             this.Controls.Add(this.pcbCar);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmCaracteristics";
-            this.Text = "FrmCaracteristics";
+            this.Text = "Характеристики Автомобиля";
             ((System.ComponentModel.ISupportInitialize)(this.pcbCar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

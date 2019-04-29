@@ -17,9 +17,13 @@ namespace BestTeamProject
             InitializeComponent();
         }
 
+        public List<Car> cars;
+
         private void FrmMain_Load(object sender, EventArgs e)
         {
-            
+            cars = new List<Car>();
+            // тут надо будет выбрать из базы данны машинки
+            //...
         }
 
         // Вызываетсч окно руководства пользователя

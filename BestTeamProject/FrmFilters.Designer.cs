@@ -30,59 +30,59 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmFilters));
             this.label12 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblFuelWaist = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.lblYear = new System.Windows.Forms.Label();
             this.trbMinYear = new System.Windows.Forms.TrackBar();
             this.gbxMake = new System.Windows.Forms.GroupBox();
-            this.ckbMazda = new System.Windows.Forms.CheckBox();
-            this.ckbAudi = new System.Windows.Forms.CheckBox();
             this.ckbShevrolet = new System.Windows.Forms.CheckBox();
+            this.ckbAudi = new System.Windows.Forms.CheckBox();
+            this.ckbMazda = new System.Windows.Forms.CheckBox();
             this.trbMaxYear = new System.Windows.Forms.TrackBar();
             this.lblMinYear = new System.Windows.Forms.Label();
             this.lblMaxYear = new System.Windows.Forms.Label();
             this.btnDone = new System.Windows.Forms.Button();
             this.gpbColor = new System.Windows.Forms.GroupBox();
+            this.ckbGreen = new System.Windows.Forms.CheckBox();
+            this.ckbBlue = new System.Windows.Forms.CheckBox();
+            this.ckbYellow = new System.Windows.Forms.CheckBox();
             this.ckbRed = new System.Windows.Forms.CheckBox();
             this.ckbWhite = new System.Windows.Forms.CheckBox();
             this.ckbBlack = new System.Windows.Forms.CheckBox();
-            this.ckbYellow = new System.Windows.Forms.CheckBox();
-            this.ckbBlue = new System.Windows.Forms.CheckBox();
-            this.ckbGreen = new System.Windows.Forms.CheckBox();
             this.trbMaxPower = new System.Windows.Forms.TrackBar();
             this.trbMinPower = new System.Windows.Forms.TrackBar();
-            this.trackBar3 = new System.Windows.Forms.TrackBar();
-            this.trackBar4 = new System.Windows.Forms.TrackBar();
-            this.trackBar5 = new System.Windows.Forms.TrackBar();
-            this.trackBar6 = new System.Windows.Forms.TrackBar();
-            this.gbxPayment = new System.Windows.Forms.GroupBox();
+            this.trbMaxFuelWaist = new System.Windows.Forms.TrackBar();
+            this.trbMinFuelWaist = new System.Windows.Forms.TrackBar();
+            this.gbxPlaceNumber = new System.Windows.Forms.GroupBox();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.trackBar7 = new System.Windows.Forms.TrackBar();
             this.trackBar8 = new System.Windows.Forms.TrackBar();
             this.txtMinPower = new System.Windows.Forms.TextBox();
             this.txtMaxPower = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtMaxFuelWaist = new System.Windows.Forms.TextBox();
+            this.txtMinFuelWaist = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.trbMaxAccTime = new System.Windows.Forms.TrackBar();
+            this.txtMaxAccTime = new System.Windows.Forms.TextBox();
+            this.txtMinAccTime = new System.Windows.Forms.TextBox();
+            this.trbMinAccTime = new System.Windows.Forms.TrackBar();
+            this.lblAccTime = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.trbMinYear)).BeginInit();
             this.gbxMake.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trbMaxYear)).BeginInit();
             this.gpbColor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trbMaxPower)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trbMinPower)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar6)).BeginInit();
-            this.gbxPayment.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trbMaxFuelWaist)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trbMinFuelWaist)).BeginInit();
+            this.gbxPlaceNumber.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trbMaxAccTime)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trbMinAccTime)).BeginInit();
             this.SuspendLayout();
             // 
             // label12
@@ -98,31 +98,18 @@
             this.label12.Text = "Цена";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label8
+            // lblFuelWaist
             // 
-            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.lblFuelWaist.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label8.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label8.Location = new System.Drawing.Point(12, 337);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(98, 85);
-            this.label8.TabIndex = 35;
-            this.label8.Text = "Расход топлива на 100 км";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label1
-            // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(12, 252);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(98, 72);
-            this.label1.TabIndex = 34;
-            this.label1.Text = "Время разгона до 100 км/ч";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblFuelWaist.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblFuelWaist.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblFuelWaist.Location = new System.Drawing.Point(12, 337);
+            this.lblFuelWaist.Name = "lblFuelWaist";
+            this.lblFuelWaist.Size = new System.Drawing.Size(98, 85);
+            this.lblFuelWaist.TabIndex = 35;
+            this.lblFuelWaist.Text = "Расход топлива на 100 км";
+            this.lblFuelWaist.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label6
             // 
@@ -174,15 +161,15 @@
             this.gbxMake.TabStop = false;
             this.gbxMake.Text = "Марка";
             // 
-            // ckbMazda
+            // ckbShevrolet
             // 
-            this.ckbMazda.AutoSize = true;
-            this.ckbMazda.Location = new System.Drawing.Point(204, 14);
-            this.ckbMazda.Name = "ckbMazda";
-            this.ckbMazda.Size = new System.Drawing.Size(77, 26);
-            this.ckbMazda.TabIndex = 0;
-            this.ckbMazda.Text = "Mazda";
-            this.ckbMazda.UseVisualStyleBackColor = true;
+            this.ckbShevrolet.AutoSize = true;
+            this.ckbShevrolet.Location = new System.Drawing.Point(356, 14);
+            this.ckbShevrolet.Name = "ckbShevrolet";
+            this.ckbShevrolet.Size = new System.Drawing.Size(93, 26);
+            this.ckbShevrolet.TabIndex = 2;
+            this.ckbShevrolet.Text = "Shevrolet";
+            this.ckbShevrolet.UseVisualStyleBackColor = true;
             // 
             // ckbAudi
             // 
@@ -194,15 +181,15 @@
             this.ckbAudi.Text = "Audi";
             this.ckbAudi.UseVisualStyleBackColor = true;
             // 
-            // ckbShevrolet
+            // ckbMazda
             // 
-            this.ckbShevrolet.AutoSize = true;
-            this.ckbShevrolet.Location = new System.Drawing.Point(356, 14);
-            this.ckbShevrolet.Name = "ckbShevrolet";
-            this.ckbShevrolet.Size = new System.Drawing.Size(93, 26);
-            this.ckbShevrolet.TabIndex = 2;
-            this.ckbShevrolet.Text = "Shevrolet";
-            this.ckbShevrolet.UseVisualStyleBackColor = true;
+            this.ckbMazda.AutoSize = true;
+            this.ckbMazda.Location = new System.Drawing.Point(204, 14);
+            this.ckbMazda.Name = "ckbMazda";
+            this.ckbMazda.Size = new System.Drawing.Size(77, 26);
+            this.ckbMazda.TabIndex = 0;
+            this.ckbMazda.Text = "Mazda";
+            this.ckbMazda.UseVisualStyleBackColor = true;
             // 
             // trbMaxYear
             // 
@@ -275,6 +262,40 @@
             this.gpbColor.TabStop = false;
             this.gpbColor.Text = "Цвет";
             // 
+            // ckbGreen
+            // 
+            this.ckbGreen.AutoSize = true;
+            this.ckbGreen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.ckbGreen.Location = new System.Drawing.Point(124, 42);
+            this.ckbGreen.Name = "ckbGreen";
+            this.ckbGreen.Size = new System.Drawing.Size(91, 26);
+            this.ckbGreen.TabIndex = 5;
+            this.ckbGreen.Text = "Зеленый";
+            this.ckbGreen.UseVisualStyleBackColor = false;
+            // 
+            // ckbBlue
+            // 
+            this.ckbBlue.AutoSize = true;
+            this.ckbBlue.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.ckbBlue.ForeColor = System.Drawing.Color.White;
+            this.ckbBlue.Location = new System.Drawing.Point(241, 42);
+            this.ckbBlue.Name = "ckbBlue";
+            this.ckbBlue.Size = new System.Drawing.Size(75, 26);
+            this.ckbBlue.TabIndex = 4;
+            this.ckbBlue.Text = "Синий";
+            this.ckbBlue.UseVisualStyleBackColor = false;
+            // 
+            // ckbYellow
+            // 
+            this.ckbYellow.AutoSize = true;
+            this.ckbYellow.BackColor = System.Drawing.Color.Yellow;
+            this.ckbYellow.Location = new System.Drawing.Point(356, 42);
+            this.ckbYellow.Name = "ckbYellow";
+            this.ckbYellow.Size = new System.Drawing.Size(93, 26);
+            this.ckbYellow.TabIndex = 3;
+            this.ckbYellow.Text = "Желтый";
+            this.ckbYellow.UseVisualStyleBackColor = false;
+            // 
             // ckbRed
             // 
             this.ckbRed.AutoSize = true;
@@ -309,39 +330,6 @@
             this.ckbBlack.Text = "Черный";
             this.ckbBlack.UseVisualStyleBackColor = false;
             // 
-            // ckbYellow
-            // 
-            this.ckbYellow.AutoSize = true;
-            this.ckbYellow.BackColor = System.Drawing.Color.Yellow;
-            this.ckbYellow.Location = new System.Drawing.Point(356, 42);
-            this.ckbYellow.Name = "ckbYellow";
-            this.ckbYellow.Size = new System.Drawing.Size(93, 26);
-            this.ckbYellow.TabIndex = 3;
-            this.ckbYellow.Text = "Желтый";
-            this.ckbYellow.UseVisualStyleBackColor = false;
-            // 
-            // ckbBlue
-            // 
-            this.ckbBlue.AutoSize = true;
-            this.ckbBlue.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.ckbBlue.Location = new System.Drawing.Point(241, 42);
-            this.ckbBlue.Name = "ckbBlue";
-            this.ckbBlue.Size = new System.Drawing.Size(75, 26);
-            this.ckbBlue.TabIndex = 4;
-            this.ckbBlue.Text = "Синий";
-            this.ckbBlue.UseVisualStyleBackColor = false;
-            // 
-            // ckbGreen
-            // 
-            this.ckbGreen.AutoSize = true;
-            this.ckbGreen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.ckbGreen.Location = new System.Drawing.Point(124, 42);
-            this.ckbGreen.Name = "ckbGreen";
-            this.ckbGreen.Size = new System.Drawing.Size(91, 26);
-            this.ckbGreen.TabIndex = 5;
-            this.ckbGreen.Text = "Зеленый";
-            this.ckbGreen.UseVisualStyleBackColor = false;
-            // 
             // trbMaxPower
             // 
             this.trbMaxPower.Location = new System.Drawing.Point(363, 204);
@@ -364,58 +352,48 @@
             this.trbMinPower.Value = 100;
             this.trbMinPower.Scroll += new System.EventHandler(this.trbMinPower_Scroll);
             // 
-            // trackBar3
+            // trbMaxFuelWaist
             // 
-            this.trackBar3.Location = new System.Drawing.Point(363, 274);
-            this.trackBar3.Maximum = 2019;
-            this.trackBar3.Minimum = 2010;
-            this.trackBar3.Name = "trackBar3";
-            this.trackBar3.Size = new System.Drawing.Size(104, 45);
-            this.trackBar3.TabIndex = 51;
-            this.trackBar3.Value = 2019;
+            this.trbMaxFuelWaist.Location = new System.Drawing.Point(363, 364);
+            this.trbMaxFuelWaist.Maximum = 2019;
+            this.trbMaxFuelWaist.Minimum = 2010;
+            this.trbMaxFuelWaist.Name = "trbMaxFuelWaist";
+            this.trbMaxFuelWaist.Size = new System.Drawing.Size(104, 45);
+            this.trbMaxFuelWaist.TabIndex = 55;
+            this.trbMaxFuelWaist.Value = 2019;
             // 
-            // trackBar4
+            // trbMinFuelWaist
             // 
-            this.trackBar4.Location = new System.Drawing.Point(109, 274);
-            this.trackBar4.Maximum = 2019;
-            this.trackBar4.Minimum = 2010;
-            this.trackBar4.Name = "trackBar4";
-            this.trackBar4.Size = new System.Drawing.Size(104, 45);
-            this.trackBar4.TabIndex = 50;
-            this.trackBar4.Value = 2010;
+            this.trbMinFuelWaist.Location = new System.Drawing.Point(109, 364);
+            this.trbMinFuelWaist.Maximum = 2019;
+            this.trbMinFuelWaist.Minimum = 2010;
+            this.trbMinFuelWaist.Name = "trbMinFuelWaist";
+            this.trbMinFuelWaist.Size = new System.Drawing.Size(104, 45);
+            this.trbMinFuelWaist.TabIndex = 54;
+            this.trbMinFuelWaist.Value = 2010;
             // 
-            // trackBar5
+            // gbxPlaceNumber
             // 
-            this.trackBar5.Location = new System.Drawing.Point(363, 364);
-            this.trackBar5.Maximum = 2019;
-            this.trackBar5.Minimum = 2010;
-            this.trackBar5.Name = "trackBar5";
-            this.trackBar5.Size = new System.Drawing.Size(104, 45);
-            this.trackBar5.TabIndex = 55;
-            this.trackBar5.Value = 2019;
+            this.gbxPlaceNumber.Controls.Add(this.checkBox3);
+            this.gbxPlaceNumber.Controls.Add(this.checkBox1);
+            this.gbxPlaceNumber.Controls.Add(this.checkBox2);
+            this.gbxPlaceNumber.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.gbxPlaceNumber.Location = new System.Drawing.Point(12, 425);
+            this.gbxPlaceNumber.Name = "gbxPlaceNumber";
+            this.gbxPlaceNumber.Size = new System.Drawing.Size(455, 46);
+            this.gbxPlaceNumber.TabIndex = 58;
+            this.gbxPlaceNumber.TabStop = false;
+            this.gbxPlaceNumber.Text = "Количество мест";
             // 
-            // trackBar6
+            // checkBox3
             // 
-            this.trackBar6.Location = new System.Drawing.Point(109, 364);
-            this.trackBar6.Maximum = 2019;
-            this.trackBar6.Minimum = 2010;
-            this.trackBar6.Name = "trackBar6";
-            this.trackBar6.Size = new System.Drawing.Size(104, 45);
-            this.trackBar6.TabIndex = 54;
-            this.trackBar6.Value = 2010;
-            // 
-            // gbxPayment
-            // 
-            this.gbxPayment.Controls.Add(this.checkBox3);
-            this.gbxPayment.Controls.Add(this.checkBox1);
-            this.gbxPayment.Controls.Add(this.checkBox2);
-            this.gbxPayment.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.gbxPayment.Location = new System.Drawing.Point(12, 425);
-            this.gbxPayment.Name = "gbxPayment";
-            this.gbxPayment.Size = new System.Drawing.Size(455, 46);
-            this.gbxPayment.TabIndex = 58;
-            this.gbxPayment.TabStop = false;
-            this.gbxPayment.Text = "Количество мест";
+            this.checkBox3.AutoSize = true;
+            this.checkBox3.Location = new System.Drawing.Point(412, 14);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.Size = new System.Drawing.Size(37, 26);
+            this.checkBox3.TabIndex = 4;
+            this.checkBox3.Text = "4";
+            this.checkBox3.UseVisualStyleBackColor = true;
             // 
             // checkBox1
             // 
@@ -437,16 +415,6 @@
             this.checkBox2.Text = "2";
             this.checkBox2.UseVisualStyleBackColor = true;
             this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
-            // 
-            // checkBox3
-            // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(412, 14);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(37, 26);
-            this.checkBox3.TabIndex = 4;
-            this.checkBox3.Text = "4";
-            this.checkBox3.UseVisualStyleBackColor = true;
             // 
             // trackBar7
             // 
@@ -488,32 +456,23 @@
             this.txtMaxPower.Text = "300";
             this.txtMaxPower.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtMaxPower_KeyUp);
             // 
-            // textBox3
+            // txtMaxFuelWaist
             // 
-            this.textBox3.Font = new System.Drawing.Font("Monotype Corsiva", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox3.Location = new System.Drawing.Point(316, 281);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(46, 25);
-            this.textBox3.TabIndex = 66;
-            this.textBox3.Text = "300";
+            this.txtMaxFuelWaist.Font = new System.Drawing.Font("Monotype Corsiva", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.txtMaxFuelWaist.Location = new System.Drawing.Point(316, 373);
+            this.txtMaxFuelWaist.Name = "txtMaxFuelWaist";
+            this.txtMaxFuelWaist.Size = new System.Drawing.Size(46, 25);
+            this.txtMaxFuelWaist.TabIndex = 68;
+            this.txtMaxFuelWaist.Text = "300";
             // 
-            // textBox5
+            // txtMinFuelWaist
             // 
-            this.textBox5.Font = new System.Drawing.Font("Monotype Corsiva", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox5.Location = new System.Drawing.Point(316, 373);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(46, 25);
-            this.textBox5.TabIndex = 68;
-            this.textBox5.Text = "300";
-            // 
-            // textBox6
-            // 
-            this.textBox6.Font = new System.Drawing.Font("Monotype Corsiva", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox6.Location = new System.Drawing.Point(216, 364);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(46, 25);
-            this.textBox6.TabIndex = 67;
-            this.textBox6.Text = "100";
+            this.txtMinFuelWaist.Font = new System.Drawing.Font("Monotype Corsiva", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.txtMinFuelWaist.Location = new System.Drawing.Point(216, 364);
+            this.txtMinFuelWaist.Name = "txtMinFuelWaist";
+            this.txtMinFuelWaist.Size = new System.Drawing.Size(46, 25);
+            this.txtMinFuelWaist.TabIndex = 67;
+            this.txtMinFuelWaist.Text = "100";
             // 
             // textBox7
             // 
@@ -533,14 +492,56 @@
             this.textBox8.TabIndex = 69;
             this.textBox8.Text = "100";
             // 
-            // textBox4
+            // trbMaxAccTime
             // 
-            this.textBox4.Font = new System.Drawing.Font("Monotype Corsiva", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox4.Location = new System.Drawing.Point(216, 272);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(46, 25);
-            this.textBox4.TabIndex = 65;
-            this.textBox4.Text = "100";
+            this.trbMaxAccTime.Location = new System.Drawing.Point(363, 274);
+            this.trbMaxAccTime.Maximum = 2019;
+            this.trbMaxAccTime.Minimum = 2010;
+            this.trbMaxAccTime.Name = "trbMaxAccTime";
+            this.trbMaxAccTime.Size = new System.Drawing.Size(104, 45);
+            this.trbMaxAccTime.TabIndex = 51;
+            this.trbMaxAccTime.Value = 2019;
+            // 
+            // txtMaxAccTime
+            // 
+            this.txtMaxAccTime.Font = new System.Drawing.Font("Monotype Corsiva", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.txtMaxAccTime.Location = new System.Drawing.Point(316, 281);
+            this.txtMaxAccTime.Name = "txtMaxAccTime";
+            this.txtMaxAccTime.Size = new System.Drawing.Size(46, 25);
+            this.txtMaxAccTime.TabIndex = 66;
+            this.txtMaxAccTime.Text = "300";
+            // 
+            // txtMinAccTime
+            // 
+            this.txtMinAccTime.Font = new System.Drawing.Font("Monotype Corsiva", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.txtMinAccTime.Location = new System.Drawing.Point(216, 272);
+            this.txtMinAccTime.Name = "txtMinAccTime";
+            this.txtMinAccTime.Size = new System.Drawing.Size(46, 25);
+            this.txtMinAccTime.TabIndex = 65;
+            this.txtMinAccTime.Text = "100";
+            // 
+            // trbMinAccTime
+            // 
+            this.trbMinAccTime.Location = new System.Drawing.Point(109, 274);
+            this.trbMinAccTime.Maximum = 2019;
+            this.trbMinAccTime.Minimum = 2010;
+            this.trbMinAccTime.Name = "trbMinAccTime";
+            this.trbMinAccTime.Size = new System.Drawing.Size(104, 45);
+            this.trbMinAccTime.TabIndex = 50;
+            this.trbMinAccTime.Value = 2010;
+            // 
+            // lblAccTime
+            // 
+            this.lblAccTime.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblAccTime.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblAccTime.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblAccTime.Location = new System.Drawing.Point(12, 252);
+            this.lblAccTime.Name = "lblAccTime";
+            this.lblAccTime.Size = new System.Drawing.Size(98, 72);
+            this.lblAccTime.TabIndex = 34;
+            this.lblAccTime.Text = "Время разгона до 100 км/ч";
+            this.lblAccTime.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // FrmFilters
             // 
@@ -549,19 +550,19 @@
             this.ClientSize = new System.Drawing.Size(484, 599);
             this.Controls.Add(this.textBox7);
             this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txtMaxFuelWaist);
+            this.Controls.Add(this.txtMinFuelWaist);
+            this.Controls.Add(this.txtMaxAccTime);
+            this.Controls.Add(this.txtMinAccTime);
             this.Controls.Add(this.txtMaxPower);
             this.Controls.Add(this.txtMinPower);
             this.Controls.Add(this.trackBar7);
             this.Controls.Add(this.trackBar8);
-            this.Controls.Add(this.gbxPayment);
-            this.Controls.Add(this.trackBar5);
-            this.Controls.Add(this.trackBar6);
-            this.Controls.Add(this.trackBar3);
-            this.Controls.Add(this.trackBar4);
+            this.Controls.Add(this.gbxPlaceNumber);
+            this.Controls.Add(this.trbMaxFuelWaist);
+            this.Controls.Add(this.trbMinFuelWaist);
+            this.Controls.Add(this.trbMaxAccTime);
+            this.Controls.Add(this.trbMinAccTime);
             this.Controls.Add(this.trbMaxPower);
             this.Controls.Add(this.trbMinPower);
             this.Controls.Add(this.gpbColor);
@@ -572,8 +573,8 @@
             this.Controls.Add(this.gbxMake);
             this.Controls.Add(this.trbMinYear);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblFuelWaist);
+            this.Controls.Add(this.lblAccTime);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.lblYear);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -587,14 +588,14 @@
             this.gpbColor.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trbMaxPower)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trbMinPower)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar6)).EndInit();
-            this.gbxPayment.ResumeLayout(false);
-            this.gbxPayment.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trbMaxFuelWaist)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trbMinFuelWaist)).EndInit();
+            this.gbxPlaceNumber.ResumeLayout(false);
+            this.gbxPlaceNumber.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trbMaxAccTime)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trbMinAccTime)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -603,8 +604,7 @@
         #endregion
 
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblFuelWaist;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label lblYear;
         private System.Windows.Forms.TrackBar trbMinYear;
@@ -625,11 +625,9 @@
         private System.Windows.Forms.CheckBox ckbYellow;
         private System.Windows.Forms.TrackBar trbMaxPower;
         private System.Windows.Forms.TrackBar trbMinPower;
-        private System.Windows.Forms.TrackBar trackBar3;
-        private System.Windows.Forms.TrackBar trackBar4;
-        private System.Windows.Forms.TrackBar trackBar5;
-        private System.Windows.Forms.TrackBar trackBar6;
-        private System.Windows.Forms.GroupBox gbxPayment;
+        private System.Windows.Forms.TrackBar trbMaxFuelWaist;
+        private System.Windows.Forms.TrackBar trbMinFuelWaist;
+        private System.Windows.Forms.GroupBox gbxPlaceNumber;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.CheckBox checkBox3;
@@ -637,11 +635,14 @@
         private System.Windows.Forms.TrackBar trackBar8;
         private System.Windows.Forms.TextBox txtMinPower;
         private System.Windows.Forms.TextBox txtMaxPower;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtMaxFuelWaist;
+        private System.Windows.Forms.TextBox txtMinFuelWaist;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TrackBar trbMaxAccTime;
+        private System.Windows.Forms.TextBox txtMaxAccTime;
+        private System.Windows.Forms.TextBox txtMinAccTime;
+        private System.Windows.Forms.TrackBar trbMinAccTime;
+        private System.Windows.Forms.Label lblAccTime;
     }
 }
