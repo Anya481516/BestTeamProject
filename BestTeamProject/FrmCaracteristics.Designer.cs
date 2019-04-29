@@ -36,7 +36,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -48,7 +47,6 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
@@ -148,26 +146,13 @@
             this.label2.Text = "Марка";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // label1
-            // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(12, 392);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(138, 55);
-            this.label1.TabIndex = 22;
-            this.label1.Text = "Время разгона до 100 км/ч";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
             // label8
             // 
             this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label8.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label8.Location = new System.Drawing.Point(12, 447);
+            this.label8.Location = new System.Drawing.Point(12, 381);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(138, 50);
             this.label8.TabIndex = 23;
@@ -180,7 +165,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label9.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label9.Location = new System.Drawing.Point(12, 501);
+            this.label9.Location = new System.Drawing.Point(12, 435);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(138, 44);
             this.label9.TabIndex = 24;
@@ -193,7 +178,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label10.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label10.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label10.Location = new System.Drawing.Point(12, 549);
+            this.label10.Location = new System.Drawing.Point(12, 483);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(138, 24);
             this.label10.TabIndex = 25;
@@ -206,7 +191,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label11.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label11.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label11.Location = new System.Drawing.Point(12, 583);
+            this.label11.Location = new System.Drawing.Point(12, 517);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(138, 47);
             this.label11.TabIndex = 26;
@@ -219,7 +204,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label12.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label12.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label12.Location = new System.Drawing.Point(12, 635);
+            this.label12.Location = new System.Drawing.Point(12, 569);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(138, 24);
             this.label12.TabIndex = 27;
@@ -286,21 +271,11 @@
             this.textBox3.TabIndex = 33;
             this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox4
-            // 
-            this.textBox4.Enabled = false;
-            this.textBox4.Font = new System.Drawing.Font("Lato", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox4.Location = new System.Drawing.Point(152, 411);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(320, 23);
-            this.textBox4.TabIndex = 34;
-            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // textBox5
             // 
             this.textBox5.Enabled = false;
             this.textBox5.Font = new System.Drawing.Font("Lato", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox5.Location = new System.Drawing.Point(152, 464);
+            this.textBox5.Location = new System.Drawing.Point(152, 398);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(320, 23);
             this.textBox5.TabIndex = 35;
@@ -310,7 +285,7 @@
             // 
             this.textBox6.Enabled = false;
             this.textBox6.Font = new System.Drawing.Font("Lato", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox6.Location = new System.Drawing.Point(152, 515);
+            this.textBox6.Location = new System.Drawing.Point(152, 449);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(320, 23);
             this.textBox6.TabIndex = 36;
@@ -320,7 +295,7 @@
             // 
             this.textBox7.Enabled = false;
             this.textBox7.Font = new System.Drawing.Font("Lato", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox7.Location = new System.Drawing.Point(152, 553);
+            this.textBox7.Location = new System.Drawing.Point(152, 487);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(320, 23);
             this.textBox7.TabIndex = 37;
@@ -330,7 +305,7 @@
             // 
             this.textBox8.Enabled = false;
             this.textBox8.Font = new System.Drawing.Font("Lato", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox8.Location = new System.Drawing.Point(152, 598);
+            this.textBox8.Location = new System.Drawing.Point(152, 532);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(320, 23);
             this.textBox8.TabIndex = 38;
@@ -340,7 +315,7 @@
             // 
             this.textBox9.Enabled = false;
             this.textBox9.Font = new System.Drawing.Font("Lato", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox9.Location = new System.Drawing.Point(152, 639);
+            this.textBox9.Location = new System.Drawing.Point(152, 573);
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(320, 23);
             this.textBox9.TabIndex = 39;
@@ -350,13 +325,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(484, 673);
+            this.ClientSize = new System.Drawing.Size(484, 609);
             this.Controls.Add(this.textBox9);
             this.Controls.Add(this.textBox8);
             this.Controls.Add(this.textBox7);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
@@ -368,7 +342,6 @@
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -394,7 +367,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
@@ -406,7 +378,6 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox7;

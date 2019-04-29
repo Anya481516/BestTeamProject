@@ -14,7 +14,7 @@ namespace BestTeamProject
     public partial class FrmCatalog : Form
     {
         // https://www.youtube.com/watch?v=zCbsl3lNvnk
-        Car car;
+        Car car; // Данная машина выбранная
         public static string connectString = "";
         public OleDbConnection myConnection;
 
@@ -28,7 +28,7 @@ namespace BestTeamProject
         private void btnBuy_Click(object sender, EventArgs e)
         {
             // купить машинку
-            FrmSale frmSale = new FrmSale();
+            FrmSale frmSale = new FrmSale(car);
             frmSale.Show();
         }
 

@@ -8,11 +8,11 @@ namespace BestTeamProject
 {
     class Person
     {
-        public String FirstName { get; set; }
-        public String LastName { get; set; }
-        public String FatherName { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string FatherName { get; set; }
         public DateTime DateOfBirth { get; set; }
-        public String Telephone { get; set; }
-        public String Address { get; set; }
+        public string Telephone { get; set; }
+        public string Address { get; set; }
     }
 }

@@ -9,13 +9,12 @@ namespace BestTeamProject
     public class Car
     {
         public int CarID { get; set; }
-        public String Make { get; set; }
-        public String Model { get; set; }
+        public string Make { get; set; }
+        public string Model { get; set; }
         public int Year { get; set; }
-        public String Color { get; set; }
+        public string Color { get; set; }
         public int Power { get; set; }
         public int MaxSpeed { get; set; }
-        public int AccTime { get; set; }
         public int FuelWaist { get; set; }
         public int PlaceQuant { get; set; }
         public int BackVolume { get; set; }
@@ -35,7 +34,6 @@ namespace BestTeamProject
             Color = car.Color;
             Power = car.Power;
             MaxSpeed = car.MaxSpeed;
-            AccTime = car.AccTime;
             FuelWaist = car.FuelWaist;
             PlaceQuant = car.PlaceQuant;
             BackVolume = car.BackVolume;

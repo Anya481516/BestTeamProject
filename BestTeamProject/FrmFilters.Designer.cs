@@ -65,11 +65,6 @@
             this.txtMinFuelWaist = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
-            this.trbMaxAccTime = new System.Windows.Forms.TrackBar();
-            this.txtMaxAccTime = new System.Windows.Forms.TextBox();
-            this.txtMinAccTime = new System.Windows.Forms.TextBox();
-            this.trbMinAccTime = new System.Windows.Forms.TrackBar();
-            this.lblAccTime = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.trbMinYear)).BeginInit();
             this.gbxMake.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trbMaxYear)).BeginInit();
@@ -81,8 +76,6 @@
             this.gbxPlaceNumber.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trbMaxAccTime)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trbMinAccTime)).BeginInit();
             this.SuspendLayout();
             // 
             // label12
@@ -91,7 +84,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label12.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label12.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label12.Location = new System.Drawing.Point(12, 489);
+            this.label12.Location = new System.Drawing.Point(12, 384);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(98, 24);
             this.label12.TabIndex = 39;
@@ -104,7 +97,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblFuelWaist.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblFuelWaist.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblFuelWaist.Location = new System.Drawing.Point(12, 337);
+            this.lblFuelWaist.Location = new System.Drawing.Point(12, 232);
             this.lblFuelWaist.Name = "lblFuelWaist";
             this.lblFuelWaist.Size = new System.Drawing.Size(98, 85);
             this.lblFuelWaist.TabIndex = 35;
@@ -238,7 +231,7 @@
             this.btnDone.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnDone.Font = new System.Drawing.Font("Lato Black", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnDone.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnDone.Location = new System.Drawing.Point(12, 558);
+            this.btnDone.Location = new System.Drawing.Point(12, 432);
             this.btnDone.Margin = new System.Windows.Forms.Padding(0);
             this.btnDone.Name = "btnDone";
             this.btnDone.Size = new System.Drawing.Size(463, 32);
@@ -354,7 +347,7 @@
             // 
             // trbMaxFuelWaist
             // 
-            this.trbMaxFuelWaist.Location = new System.Drawing.Point(363, 364);
+            this.trbMaxFuelWaist.Location = new System.Drawing.Point(363, 259);
             this.trbMaxFuelWaist.Maximum = 2019;
             this.trbMaxFuelWaist.Minimum = 2010;
             this.trbMaxFuelWaist.Name = "trbMaxFuelWaist";
@@ -364,7 +357,7 @@
             // 
             // trbMinFuelWaist
             // 
-            this.trbMinFuelWaist.Location = new System.Drawing.Point(109, 364);
+            this.trbMinFuelWaist.Location = new System.Drawing.Point(109, 259);
             this.trbMinFuelWaist.Maximum = 2019;
             this.trbMinFuelWaist.Minimum = 2010;
             this.trbMinFuelWaist.Name = "trbMinFuelWaist";
@@ -378,7 +371,7 @@
             this.gbxPlaceNumber.Controls.Add(this.checkBox1);
             this.gbxPlaceNumber.Controls.Add(this.checkBox2);
             this.gbxPlaceNumber.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.gbxPlaceNumber.Location = new System.Drawing.Point(12, 425);
+            this.gbxPlaceNumber.Location = new System.Drawing.Point(12, 320);
             this.gbxPlaceNumber.Name = "gbxPlaceNumber";
             this.gbxPlaceNumber.Size = new System.Drawing.Size(455, 46);
             this.gbxPlaceNumber.TabIndex = 58;
@@ -418,7 +411,7 @@
             // 
             // trackBar7
             // 
-            this.trackBar7.Location = new System.Drawing.Point(363, 481);
+            this.trackBar7.Location = new System.Drawing.Point(363, 376);
             this.trackBar7.Maximum = 2019;
             this.trackBar7.Minimum = 2010;
             this.trackBar7.Name = "trackBar7";
@@ -428,7 +421,7 @@
             // 
             // trackBar8
             // 
-            this.trackBar8.Location = new System.Drawing.Point(109, 481);
+            this.trackBar8.Location = new System.Drawing.Point(109, 376);
             this.trackBar8.Maximum = 2019;
             this.trackBar8.Minimum = 2010;
             this.trackBar8.Name = "trackBar8";
@@ -459,7 +452,7 @@
             // txtMaxFuelWaist
             // 
             this.txtMaxFuelWaist.Font = new System.Drawing.Font("Monotype Corsiva", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.txtMaxFuelWaist.Location = new System.Drawing.Point(316, 373);
+            this.txtMaxFuelWaist.Location = new System.Drawing.Point(316, 268);
             this.txtMaxFuelWaist.Name = "txtMaxFuelWaist";
             this.txtMaxFuelWaist.Size = new System.Drawing.Size(46, 25);
             this.txtMaxFuelWaist.TabIndex = 68;
@@ -468,7 +461,7 @@
             // txtMinFuelWaist
             // 
             this.txtMinFuelWaist.Font = new System.Drawing.Font("Monotype Corsiva", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.txtMinFuelWaist.Location = new System.Drawing.Point(216, 364);
+            this.txtMinFuelWaist.Location = new System.Drawing.Point(216, 259);
             this.txtMinFuelWaist.Name = "txtMinFuelWaist";
             this.txtMinFuelWaist.Size = new System.Drawing.Size(46, 25);
             this.txtMinFuelWaist.TabIndex = 67;
@@ -477,7 +470,7 @@
             // textBox7
             // 
             this.textBox7.Font = new System.Drawing.Font("Monotype Corsiva", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox7.Location = new System.Drawing.Point(316, 490);
+            this.textBox7.Location = new System.Drawing.Point(316, 385);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(46, 25);
             this.textBox7.TabIndex = 70;
@@ -486,74 +479,21 @@
             // textBox8
             // 
             this.textBox8.Font = new System.Drawing.Font("Monotype Corsiva", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox8.Location = new System.Drawing.Point(216, 481);
+            this.textBox8.Location = new System.Drawing.Point(216, 376);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(46, 25);
             this.textBox8.TabIndex = 69;
             this.textBox8.Text = "100";
             // 
-            // trbMaxAccTime
-            // 
-            this.trbMaxAccTime.Location = new System.Drawing.Point(363, 274);
-            this.trbMaxAccTime.Maximum = 2019;
-            this.trbMaxAccTime.Minimum = 2010;
-            this.trbMaxAccTime.Name = "trbMaxAccTime";
-            this.trbMaxAccTime.Size = new System.Drawing.Size(104, 45);
-            this.trbMaxAccTime.TabIndex = 51;
-            this.trbMaxAccTime.Value = 2019;
-            // 
-            // txtMaxAccTime
-            // 
-            this.txtMaxAccTime.Font = new System.Drawing.Font("Monotype Corsiva", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.txtMaxAccTime.Location = new System.Drawing.Point(316, 281);
-            this.txtMaxAccTime.Name = "txtMaxAccTime";
-            this.txtMaxAccTime.Size = new System.Drawing.Size(46, 25);
-            this.txtMaxAccTime.TabIndex = 66;
-            this.txtMaxAccTime.Text = "300";
-            // 
-            // txtMinAccTime
-            // 
-            this.txtMinAccTime.Font = new System.Drawing.Font("Monotype Corsiva", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.txtMinAccTime.Location = new System.Drawing.Point(216, 272);
-            this.txtMinAccTime.Name = "txtMinAccTime";
-            this.txtMinAccTime.Size = new System.Drawing.Size(46, 25);
-            this.txtMinAccTime.TabIndex = 65;
-            this.txtMinAccTime.Text = "100";
-            // 
-            // trbMinAccTime
-            // 
-            this.trbMinAccTime.Location = new System.Drawing.Point(109, 274);
-            this.trbMinAccTime.Maximum = 2019;
-            this.trbMinAccTime.Minimum = 2010;
-            this.trbMinAccTime.Name = "trbMinAccTime";
-            this.trbMinAccTime.Size = new System.Drawing.Size(104, 45);
-            this.trbMinAccTime.TabIndex = 50;
-            this.trbMinAccTime.Value = 2010;
-            // 
-            // lblAccTime
-            // 
-            this.lblAccTime.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblAccTime.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblAccTime.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblAccTime.Location = new System.Drawing.Point(12, 252);
-            this.lblAccTime.Name = "lblAccTime";
-            this.lblAccTime.Size = new System.Drawing.Size(98, 72);
-            this.lblAccTime.TabIndex = 34;
-            this.lblAccTime.Text = "Время разгона до 100 км/ч";
-            this.lblAccTime.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
             // FrmFilters
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(484, 599);
+            this.ClientSize = new System.Drawing.Size(484, 473);
             this.Controls.Add(this.textBox7);
             this.Controls.Add(this.textBox8);
             this.Controls.Add(this.txtMaxFuelWaist);
             this.Controls.Add(this.txtMinFuelWaist);
-            this.Controls.Add(this.txtMaxAccTime);
-            this.Controls.Add(this.txtMinAccTime);
             this.Controls.Add(this.txtMaxPower);
             this.Controls.Add(this.txtMinPower);
             this.Controls.Add(this.trackBar7);
@@ -561,8 +501,6 @@
             this.Controls.Add(this.gbxPlaceNumber);
             this.Controls.Add(this.trbMaxFuelWaist);
             this.Controls.Add(this.trbMinFuelWaist);
-            this.Controls.Add(this.trbMaxAccTime);
-            this.Controls.Add(this.trbMinAccTime);
             this.Controls.Add(this.trbMaxPower);
             this.Controls.Add(this.trbMinPower);
             this.Controls.Add(this.gpbColor);
@@ -574,7 +512,6 @@
             this.Controls.Add(this.trbMinYear);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.lblFuelWaist);
-            this.Controls.Add(this.lblAccTime);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.lblYear);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -594,8 +531,6 @@
             this.gbxPlaceNumber.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trbMaxAccTime)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trbMinAccTime)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -639,10 +574,5 @@
         private System.Windows.Forms.TextBox txtMinFuelWaist;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TrackBar trbMaxAccTime;
-        private System.Windows.Forms.TextBox txtMaxAccTime;
-        private System.Windows.Forms.TextBox txtMinAccTime;
-        private System.Windows.Forms.TrackBar trbMinAccTime;
-        private System.Windows.Forms.Label lblAccTime;
     }
 }
