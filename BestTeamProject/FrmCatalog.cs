@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.OleDb;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,11 +13,16 @@ namespace BestTeamProject
 {
     public partial class FrmCatalog : Form
     {
+        // https://www.youtube.com/watch?v=zCbsl3lNvnk
         Car car;
+        public static string connectString = "";
+        public OleDbConnection myConnection;
 
         public FrmCatalog()
         {
             InitializeComponent();
+            myConnection = new OleDbConnection(connectString);
+            myConnection.Open();
         }
 
         private void btnBuy_Click(object sender, EventArgs e)
@@ -42,6 +48,16 @@ namespace BestTeamProject
         {
             FrmFilters frmFilters = new FrmFilters();
             frmFilters.Show();
+        }
+
+        private void FrmCatalog_Load(object sender, EventArgs e)
+        {
+            //listView1.DataBindings
+        }
+
+        private void FrmCatalog_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            myConnection.Close();
         }
     }
 }

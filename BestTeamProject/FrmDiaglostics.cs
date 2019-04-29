@@ -12,25 +12,32 @@ namespace BestTeamProject
 {
     public partial class FrmDiaglostics : Form
     {
+        public bool[] time_array = new bool[12];
         public FrmDiaglostics()
         {
             InitializeComponent();
+            drawTime();
         }
 
-        public void allTimeTrue()
+        public void TimeToday()
         {
-            rdb0910.Enabled = true;
-            rdb1011.Enabled = true;
-            rdb1112.Enabled = true;
-            rdb1213.Enabled = true;
-            rdb1314.Enabled = true;
-            rdb1415.Enabled = true;
-            rdb1516.Enabled = true;
-            rdb1617.Enabled = true;
-            rdb1718.Enabled = true;
-            rdb1819.Enabled = true;
-            rdb1920.Enabled = true;
-            rdb2021.Enabled = true;
+            for (int i = 0; i < 12; i++) //вместо этого цикла потом сделать считывание из бд на выбранную дату
+            {                              //где есть время, там true
+                time_array[i] = true;
+            }
+        }
+
+        public void drawTime()
+        {
+            for (int i = 0; i < 12; i++)
+            {
+                if (time_array[i] == true)
+                {
+                    string[] s = { (i + 9).ToString(), ".00-", (i + 10).ToString(), ".00" };
+                    string ss = string.Concat(s);
+                    timeBox.Items.Add(ss);
+                }
+            }
         }
 
         private void btnPognaliVyberem_Click(object sender, EventArgs e)
@@ -38,63 +45,31 @@ namespace BestTeamProject
             // проверим сначала всякие ошибочки
             if (dtpDate.Value.Date < DateTime.Today)
                 MessageBox.Show("Введите корректную дату");
-            //else if (dtpDate.Value.Date == DateTime.Today)
-            //{
-            //    int hour = DateTime.Now.Hour;
-            //    if (hour > 19)
-            //        MessageBox.Show("Сегодня вы уже не можете записаться, выберите пожалуйста дату начиная с завтрашнего дня");
-            //    else if (hour > 18)
-            //    {
-            //        for (int i = 0; i < hour - 7; i++)
-            //        {
-            //            // тут тоже с рисовкой чтото с drow лалала :(((
-            //            lbxTime.Items[i].BackColor = Color.Red;
-            //        }
-            //    }
-            //}
-            // записать инфу о клиетне, машине и времени
         }
 
         private void dtpDate_ValueChanged(object sender, EventArgs e)
         {
-            // радиакнопки заменить надо на чтото (поискать в инете, чтобы прорисовка норм была)
-            allTimeTrue();
+            timeBox.Items.Clear();
+
             if (dtpDate.Value.Date == DateTime.Today)
             {
+                TimeToday();
                 int hour = DateTime.Now.Hour;
+                for (int i = 0; i < (hour - 8); i++)
                 {
-                    if (hour < 7)
-                        rdb0910.Enabled = true;
-                    if (hour > 7)
-                        rdb0910.Enabled = false;
-                    if (hour > 8)
-                        rdb1011.Enabled = false;
-                    if (hour > 9)
-                        rdb1112.Enabled = false;
-                    if (hour > 10)
-                        rdb1213.Enabled = false;
-                    if (hour > 11)
-                        rdb1314.Enabled = false;
-                    if (hour > 12)
-                        rdb1415.Enabled = false;
-                    if (hour > 13)
-                        rdb1516.Enabled = false;
-                    if (hour > 14)
-                        rdb1617.Enabled = false;
-                    if (hour > 15)
-                        rdb1718.Enabled = false;
-                    if (hour > 16)
-                        rdb1819.Enabled = false;
-                    if (hour > 17)
-                        rdb1920.Enabled = false;
-                    if (hour > 18)
-                    {
-                        rdb2021.Enabled = false;
-                        MessageBox.Show("Сегодня вы уже не можете записаться, выберите пожалуйста дату начиная с завтрашнего дня");
-                    }
-                       
+                    time_array[i] = false;
                 }
+                drawTime();
+                if (hour > 21) MessageBox.Show("Сегодня вы уже не можете записаться, \nвыберите пожалуйста дату начиная с завтрашнего дня");
+
             }
+            if (dtpDate.Value.Date > DateTime.Today)
+            {
+                TimeToday();
+                drawTime();
+                if (timeBox.Items.Count == 0) MessageBox.Show("На эту дату уже нет свободного времени");
+            }
+            if (dtpDate.Value.Date < DateTime.Today) MessageBox.Show("На эту дату уже нельзя записаться, \nвыберите пожалуйста дату начиная с завтрашнего дня");
         }
     }
 }

@@ -114,6 +114,8 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FrmCatalog";
             this.Text = "Каталог салона";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmCatalog_FormClosing);
+            this.Load += new System.EventHandler(this.FrmCatalog_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
