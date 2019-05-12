@@ -12,80 +12,113 @@ namespace BestTeamProject
 {
     public partial class FrmFilters : Form
     {
+        public string priceSql;
+        public string colorSql;
+        string priceSql1 = " WHERE Price BETWEEN 1000000";
+        string priceSql2 = " AND 3000000";
+        string colorSqlBlack = "";
+        string colorSqlGrey = "";
+        string colorSqlRed = "";
+
         public FrmFilters()
         {
             InitializeComponent();
+            this.BringToFront();
         }
 
-        private void trbMinYear_Scroll(object sender, EventArgs e)
+        //// а когда меняем в текст боксе надо подумать как норм сделать йоу _______________________________
+        //private void txtMaxPower_KeyUp(object sender, KeyEventArgs e)
+        //{
+        //    if (e.KeyCode == Keys.Enter)
+        //    {
+        //        if (Int32.Parse(txtMaxPower.Text) < Int32.Parse(txtMinPower.Text))
+        //        {
+        //            txtMaxPower.Text = txtMinPower.Text;
+        //            MessageBox.Show("Число должно быть от " + txtMinPower.Text + " до 300");
+        //            txtMaxPower.SelectAll();
+        //            trbMaxPower.Value = Int32.Parse(txtMinPower.Text);
+        //        }
+        //    }
+        //}
+
+        //private void txtMinPower_KeyUp(object sender, KeyEventArgs e)
+        //{
+        //    if (e.KeyCode == Keys.Enter)
+        //    {
+        //        if (Int32.Parse(txtMinPower.Text) > Int32.Parse(txtMaxPower.Text))
+        //        {
+        //            txtMinPower.Text = txtMaxPower.Text;
+        //            MessageBox.Show("Число должно быть от 100 до " + txtMaxPower.Text);
+        //            txtMinPower.SelectAll();
+        //            trbMinPower.Value = Int32.Parse(txtMaxPower.Text);
+        //        }
+        //    }
+        //}
+
+        private void btnDone_Click(object sender, EventArgs e)
         {
-            lblMinYear.Text = trbMinYear.Value.ToString();
-        }
-
-        private void trbMaxYear_Scroll(object sender, EventArgs e)
-        {
-            lblMaxYear.Text = trbMaxYear.Value.ToString();
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void checkBox2_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        // тут все нормас
-        private void trbMinPower_Scroll(object sender, EventArgs e)
-        {
-            txtMinPower.Text = trbMinPower.Value.ToString();
-            if (Int32.Parse(txtMinPower.Text) > Int32.Parse(txtMaxPower.Text))
+            if (ckbBlack.Checked && ckbGrey.Checked && ckbRed.Checked)
             {
-                trbMinPower.Value = Int32.Parse(txtMaxPower.Text);
-                txtMinPower.Text = trbMinPower.Value.ToString();
+                colorSql = " AND Color in ('Black', 'Grey', 'Red')";
             }
+            else if (ckbBlack.Checked && ckbGrey.Checked == false && ckbRed.Checked)
+            {
+                colorSql = " AND Color in ('Black', 'Red')";
+            }
+            else if (ckbBlack.Checked && ckbGrey.Checked && ckbRed.Checked == false)
+            {
+                colorSql = " AND Color in ('Black', 'Grey')";
+            }
+            else if (ckbBlack.Checked == false && ckbGrey.Checked && ckbRed.Checked)
+            {
+                colorSql = " AND Color in ('Grey', 'Red'";
+            }
+            else if (ckbBlack.Checked == false && ckbGrey.Checked == false && ckbRed.Checked)
+            {
+                colorSql = " AND Color LIKE 'Red'";
+            }
+            else if (ckbBlack.Checked == false && ckbGrey.Checked && ckbRed.Checked == false)
+            {
+                colorSql = " AND Color LIKE 'Grey'";
+            }
+            if (ckbBlack.Checked && ckbGrey.Checked == false && ckbRed.Checked == false)
+            {
+                colorSql = " AND Color LIKE 'Black'";
+            }
+            else if (ckbBlack.Checked == false && ckbGrey.Checked == false && ckbRed.Checked == false)
+            {
+                colorSql = "";
+            }
+
+            priceSql = priceSql1 + priceSql2;
+
+            FrmCatalog frmCatalog = new FrmCatalog(priceSql + colorSql);
+            frmCatalog.Show();
+            this.Close();
         }
 
-        // тут все нормас
-        private void trbMaxPower_Scroll(object sender, EventArgs e)
+        
+        private void tkbMinPrice_Scroll(object sender, EventArgs e)
         {
-            txtMaxPower.Text = trbMaxPower.Value.ToString();
-            if (Int32.Parse(txtMaxPower.Text) < Int32.Parse(txtMinPower.Text))
+            txtMinPrice.Text = tkbMinPrice.Value.ToString();
+            if (Int32.Parse(txtMinPrice.Text) > Int32.Parse(txtMaxPrice.Text))
             {
-                trbMaxPower.Value = Int32.Parse(txtMinPower.Text);
-                txtMaxPower.Text = trbMaxPower.Value.ToString();
+                tkbMinPrice.Value = Int32.Parse(txtMaxPrice.Text);
+                txtMinPrice.Text = tkbMinPrice.Value.ToString();
             }
+            priceSql1 = " WHERE Price BETWEEN " + txtMinPrice.Text + "000";
         }
 
-        // а когда меняем в текст боксе надо подумать как норм сделать йоу _______________________________
-        private void txtMaxPower_KeyUp(object sender, KeyEventArgs e)
+        
+        private void tkbMaxPrice_Scroll(object sender, EventArgs e)
         {
-            if (e.KeyCode == Keys.Enter)
+            txtMaxPrice.Text = tkbMaxPrice.Value.ToString();
+            if (Int32.Parse(txtMaxPrice.Text) < Int32.Parse(txtMinPrice.Text))
             {
-                if (Int32.Parse(txtMaxPower.Text) < Int32.Parse(txtMinPower.Text))
-                {
-                    txtMaxPower.Text = txtMinPower.Text;
-                    MessageBox.Show("Число должно быть от " + txtMinPower.Text + " до 300");
-                    txtMaxPower.SelectAll();
-                    trbMaxPower.Value = Int32.Parse(txtMinPower.Text);
-                }
+                tkbMaxPrice.Value = Int32.Parse(txtMinPrice.Text);
+                txtMaxPrice.Text = tkbMaxPrice.Value.ToString();
             }
-        }
-
-        private void txtMinPower_KeyUp(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-            {
-                if (Int32.Parse(txtMinPower.Text) > Int32.Parse(txtMaxPower.Text))
-                {
-                    txtMinPower.Text = txtMaxPower.Text;
-                    MessageBox.Show("Число должно быть от 100 до " + txtMaxPower.Text);
-                    txtMinPower.SelectAll();
-                    trbMinPower.Value = Int32.Parse(txtMaxPower.Text);
-                }
-            }
+            priceSql2 = " AND " + txtMaxPrice.Text + "000";
         }
     }
 }

@@ -14,7 +14,7 @@ namespace BestTeamProject
 {
     public partial class FrmSale : Form
     {
-        Car car;
+        Car myCar;
         Person client;
 
         public FrmSale()
@@ -24,13 +24,15 @@ namespace BestTeamProject
 
         public FrmSale(Car car)
         {
-            car = new Car(car);
             InitializeComponent();
+            myCar = new Car(car);
+
+            pcbCar.Image = Image.FromFile(car.Photo);
         }
 
         private void btnShowCharacteristics_Click(object sender, EventArgs e)
         {
-            FrmCaracteristics frmCharacteristics = new FrmCaracteristics(car);
+            FrmCaracteristics frmCharacteristics = new FrmCaracteristics(myCar);
             frmCharacteristics.Show();
         }
 

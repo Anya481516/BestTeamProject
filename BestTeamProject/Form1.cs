@@ -43,8 +43,9 @@ namespace BestTeamProject
         // Вызывается окно каталога автомобилей
         private void btnPognaliVyberem_Click(object sender, EventArgs e)
         {
-            FrmCatalog frmCatalog = new FrmCatalog();
+            FrmCatalog frmCatalog = new FrmCatalog("");
             frmCatalog.ShowDialog();
+            //this.Close();
         }
 
         // Закрыть приложение

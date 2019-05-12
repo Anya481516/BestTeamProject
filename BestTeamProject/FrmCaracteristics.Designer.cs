@@ -40,16 +40,16 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.txtThirdName = new System.Windows.Forms.TextBox();
-            this.txtLastName = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.txtYear = new System.Windows.Forms.TextBox();
+            this.txtModel = new System.Windows.Forms.TextBox();
+            this.txtColor = new System.Windows.Forms.TextBox();
+            this.txtPower = new System.Windows.Forms.TextBox();
+            this.txtMaxSpeed = new System.Windows.Forms.TextBox();
+            this.txtFuelWaist = new System.Windows.Forms.TextBox();
+            this.txtPlaceQuant = new System.Windows.Forms.TextBox();
+            this.txtBackVolume = new System.Windows.Forms.TextBox();
+            this.txtFuelBoxVolume = new System.Windows.Forms.TextBox();
+            this.txtPrice = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pcbCar)).BeginInit();
             this.SuspendLayout();
             // 
@@ -196,121 +196,121 @@
             this.label12.Text = "Цена";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // txtThirdName
+            // txtYear
             // 
-            this.txtThirdName.Enabled = false;
-            this.txtThirdName.Font = new System.Drawing.Font("Lato", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.txtThirdName.Location = new System.Drawing.Point(152, 214);
-            this.txtThirdName.Name = "txtThirdName";
-            this.txtThirdName.Size = new System.Drawing.Size(320, 23);
-            this.txtThirdName.TabIndex = 30;
-            this.txtThirdName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtYear.Enabled = false;
+            this.txtYear.Font = new System.Drawing.Font("Lato", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.txtYear.Location = new System.Drawing.Point(152, 214);
+            this.txtYear.Name = "txtYear";
+            this.txtYear.Size = new System.Drawing.Size(320, 23);
+            this.txtYear.TabIndex = 30;
+            this.txtYear.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // txtLastName
+            // txtModel
             // 
-            this.txtLastName.Enabled = false;
-            this.txtLastName.Font = new System.Drawing.Font("Lato", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.txtLastName.Location = new System.Drawing.Point(152, 184);
-            this.txtLastName.Name = "txtLastName";
-            this.txtLastName.Size = new System.Drawing.Size(320, 23);
-            this.txtLastName.TabIndex = 29;
-            this.txtLastName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtModel.Enabled = false;
+            this.txtModel.Font = new System.Drawing.Font("Lato", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.txtModel.Location = new System.Drawing.Point(152, 184);
+            this.txtModel.Name = "txtModel";
+            this.txtModel.Size = new System.Drawing.Size(320, 23);
+            this.txtModel.TabIndex = 29;
+            this.txtModel.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox1
+            // txtColor
             // 
-            this.textBox1.Enabled = false;
-            this.textBox1.Font = new System.Drawing.Font("Lato", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox1.Location = new System.Drawing.Point(152, 244);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(320, 23);
-            this.textBox1.TabIndex = 31;
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtColor.Enabled = false;
+            this.txtColor.Font = new System.Drawing.Font("Lato", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.txtColor.Location = new System.Drawing.Point(152, 244);
+            this.txtColor.Name = "txtColor";
+            this.txtColor.Size = new System.Drawing.Size(320, 23);
+            this.txtColor.TabIndex = 31;
+            this.txtColor.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox2
+            // txtPower
             // 
-            this.textBox2.Enabled = false;
-            this.textBox2.Font = new System.Drawing.Font("Lato", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox2.Location = new System.Drawing.Point(152, 273);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(320, 23);
-            this.textBox2.TabIndex = 32;
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtPower.Enabled = false;
+            this.txtPower.Font = new System.Drawing.Font("Lato", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.txtPower.Location = new System.Drawing.Point(152, 273);
+            this.txtPower.Name = "txtPower";
+            this.txtPower.Size = new System.Drawing.Size(320, 23);
+            this.txtPower.TabIndex = 32;
+            this.txtPower.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox3
+            // txtMaxSpeed
             // 
-            this.textBox3.Enabled = false;
-            this.textBox3.Font = new System.Drawing.Font("Lato", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox3.Location = new System.Drawing.Point(152, 319);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(320, 23);
-            this.textBox3.TabIndex = 33;
-            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtMaxSpeed.Enabled = false;
+            this.txtMaxSpeed.Font = new System.Drawing.Font("Lato", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.txtMaxSpeed.Location = new System.Drawing.Point(152, 319);
+            this.txtMaxSpeed.Name = "txtMaxSpeed";
+            this.txtMaxSpeed.Size = new System.Drawing.Size(320, 23);
+            this.txtMaxSpeed.TabIndex = 33;
+            this.txtMaxSpeed.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox5
+            // txtFuelWaist
             // 
-            this.textBox5.Enabled = false;
-            this.textBox5.Font = new System.Drawing.Font("Lato", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox5.Location = new System.Drawing.Point(152, 363);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(320, 23);
-            this.textBox5.TabIndex = 35;
-            this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtFuelWaist.Enabled = false;
+            this.txtFuelWaist.Font = new System.Drawing.Font("Lato", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.txtFuelWaist.Location = new System.Drawing.Point(152, 363);
+            this.txtFuelWaist.Name = "txtFuelWaist";
+            this.txtFuelWaist.Size = new System.Drawing.Size(320, 23);
+            this.txtFuelWaist.TabIndex = 35;
+            this.txtFuelWaist.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox6
+            // txtPlaceQuant
             // 
-            this.textBox6.Enabled = false;
-            this.textBox6.Font = new System.Drawing.Font("Lato", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox6.Location = new System.Drawing.Point(152, 414);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(320, 23);
-            this.textBox6.TabIndex = 36;
-            this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtPlaceQuant.Enabled = false;
+            this.txtPlaceQuant.Font = new System.Drawing.Font("Lato", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.txtPlaceQuant.Location = new System.Drawing.Point(152, 414);
+            this.txtPlaceQuant.Name = "txtPlaceQuant";
+            this.txtPlaceQuant.Size = new System.Drawing.Size(320, 23);
+            this.txtPlaceQuant.TabIndex = 36;
+            this.txtPlaceQuant.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox7
+            // txtBackVolume
             // 
-            this.textBox7.Enabled = false;
-            this.textBox7.Font = new System.Drawing.Font("Lato", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox7.Location = new System.Drawing.Point(152, 452);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(320, 23);
-            this.textBox7.TabIndex = 37;
-            this.textBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtBackVolume.Enabled = false;
+            this.txtBackVolume.Font = new System.Drawing.Font("Lato", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.txtBackVolume.Location = new System.Drawing.Point(152, 452);
+            this.txtBackVolume.Name = "txtBackVolume";
+            this.txtBackVolume.Size = new System.Drawing.Size(320, 23);
+            this.txtBackVolume.TabIndex = 37;
+            this.txtBackVolume.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox8
+            // txtFuelBoxVolume
             // 
-            this.textBox8.Enabled = false;
-            this.textBox8.Font = new System.Drawing.Font("Lato", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox8.Location = new System.Drawing.Point(152, 497);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(320, 23);
-            this.textBox8.TabIndex = 38;
-            this.textBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtFuelBoxVolume.Enabled = false;
+            this.txtFuelBoxVolume.Font = new System.Drawing.Font("Lato", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.txtFuelBoxVolume.Location = new System.Drawing.Point(152, 497);
+            this.txtFuelBoxVolume.Name = "txtFuelBoxVolume";
+            this.txtFuelBoxVolume.Size = new System.Drawing.Size(320, 23);
+            this.txtFuelBoxVolume.TabIndex = 38;
+            this.txtFuelBoxVolume.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox9
+            // txtPrice
             // 
-            this.textBox9.Enabled = false;
-            this.textBox9.Font = new System.Drawing.Font("Lato", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox9.Location = new System.Drawing.Point(152, 538);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(320, 23);
-            this.textBox9.TabIndex = 39;
-            this.textBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtPrice.Enabled = false;
+            this.txtPrice.Font = new System.Drawing.Font("Lato", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.txtPrice.Location = new System.Drawing.Point(152, 538);
+            this.txtPrice.Name = "txtPrice";
+            this.txtPrice.Size = new System.Drawing.Size(320, 23);
+            this.txtPrice.TabIndex = 39;
+            this.txtPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // FrmCaracteristics
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(484, 568);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.txtThirdName);
-            this.Controls.Add(this.txtLastName);
+            this.Controls.Add(this.txtPrice);
+            this.Controls.Add(this.txtFuelBoxVolume);
+            this.Controls.Add(this.txtBackVolume);
+            this.Controls.Add(this.txtPlaceQuant);
+            this.Controls.Add(this.txtFuelWaist);
+            this.Controls.Add(this.txtMaxSpeed);
+            this.Controls.Add(this.txtPower);
+            this.Controls.Add(this.txtColor);
+            this.Controls.Add(this.txtYear);
+            this.Controls.Add(this.txtModel);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
@@ -344,15 +344,15 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox txtThirdName;
-        private System.Windows.Forms.TextBox txtLastName;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox txtYear;
+        private System.Windows.Forms.TextBox txtModel;
+        private System.Windows.Forms.TextBox txtColor;
+        private System.Windows.Forms.TextBox txtPower;
+        private System.Windows.Forms.TextBox txtMaxSpeed;
+        private System.Windows.Forms.TextBox txtFuelWaist;
+        private System.Windows.Forms.TextBox txtPlaceQuant;
+        private System.Windows.Forms.TextBox txtBackVolume;
+        private System.Windows.Forms.TextBox txtFuelBoxVolume;
+        private System.Windows.Forms.TextBox txtPrice;
     }
 }

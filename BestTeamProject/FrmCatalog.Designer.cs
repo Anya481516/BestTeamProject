@@ -113,6 +113,7 @@
             this.Text = "Каталог салона";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmCatalog_FormClosing);
             this.Load += new System.EventHandler(this.FrmCatalog_Load);
+            this.Leave += new System.EventHandler(this.FrmCatalog_Leave);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
